@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carrossel de Fotos</title>
+  <!-- Incluindo Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Estilos personalizados -->
+  <style>
+   /* Centralizar e aumentar o tamanho das setas de navegação */
+   .carousel-control-prev, .carousel-control-next {
+      top: 50%;
+      width: 5%;
+      height: auto;
+      font-size: 7rem; /* Tamanho das setas */
+      transform: translateY(-50%);
+    }
+    /* Tornar todas as imagens do carrossel do mesmo tamanho */
+    .carousel-item img {
+      width: 100%; /* 100% de largura */
+      height: auto; /* Altura automática */
+    }
+    .h2{
+     text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container mt-5">
+  <h2 class="mb-4">FOTOS DE VIAJENS</h2>
+  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="fotos/P1010285.JPG" class="d-block w-100" alt="Imagem 1">
+      </div>
+      <div class="carousel-item">
+        <img src="fotos/P1010391.JPG" class="d-block w-100" alt="Imagem 2">
+      </div>
+      <div class="carousel-item">
+        <img src="fotos/P1010511.JPG" class="d-block w-100" alt="Imagem 3">
+      </div>
+      <div class="carousel-item">
+        <img src="fotos/P1010553.JPG" class="d-block w-100" alt="Imagem 3">
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Anterior</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Próximo</span>
+    </a>
+  </div>
+</div>
+
+<!-- Incluindo Bootstrap JS (opcional, apenas se quiser usar controles de carrossel) -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
